@@ -1,0 +1,15 @@
+name: Label PRs based on file paths
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  labeller:
+    if: github.repository_owner == 'zzak'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/labeler@v4
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          configuration-path: .github/autolabeler.yml
+

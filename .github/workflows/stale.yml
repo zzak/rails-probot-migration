@@ -1,0 +1,38 @@
+name: Close stale issues and PRs
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily
+
+jobs:
+  stale:
+    if: github.repository_owner == 'zzak'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v8
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          days-before-stale: 60
+          days-before-close: 7
+          # days-before-stale: 90
+          # days-before-close: 7
+          exempt-milestones: true
+          exempt-issue-labels: |
+            - pinned
+            - security
+            - With reproduction steps
+            - attached PR
+            - regression
+            - release blocker
+          stale-issue-label: 'stale'
+          stale-pr-label: 'stale'
+          stale-issue-message: >
+            This issue has been automatically marked as stale because it has not been commented on for at least three months.
+
+            The resources of the Rails team are limited, and so we are asking for your help.
+
+            If you can still reproduce this error on the `7-2-stable` branch or on `main`,
+            please reply with all of the information you have about it in order to keep the issue open.
+
+            Thank you for all your contributions.
+          close-issue-message: false
+          only-issue: true
