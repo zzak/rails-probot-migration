@@ -1,7 +1,8 @@
-name: Close stale issues and PRs
+name: rails-bot: Stale
+description: Mark issues as stale after a period of inactivity
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily
+    - cron: '0 0 * * *'
 
 jobs:
   stale:
