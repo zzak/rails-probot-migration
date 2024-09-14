@@ -6,7 +6,6 @@ on:
 
 jobs:
   labeler:
-    if: github.repository_owner == 'zzak'
     permissions:
       contents: read
       pull-requests: write
