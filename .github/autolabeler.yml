@@ -1,28 +1,28 @@
 actioncable:
-  - "actioncable/**/*"
+  - changed-files: "actioncable/**/*"
 actionmailbox:
-  - "actionmailbox/**/*"
+  - changed-files: "actionmailbox/**/*"
 actionmailer:
-  - "actionmailer/**/*"
+  - changed-files: "actionmailer/**/*"
 actionpack:
-  - "actionpack/**/*"
+  - changed-files: "actionpack/**/*"
 actiontext:
-  - "actiontext/**/*"
+  - changed-files: "actiontext/**/*"
 actionview:
-  - "actionview/**/*"
+  - changed-files: "actionview/**/*"
 activejob:
-  - "activejob/**/*"
+  - changed-files: "activejob/**/*"
 activemodel:
-  - "activemodel/**/*"
+  - changed-files: "activemodel/**/*"
 activerecord:
-  - "activerecord/**/*"
+  - changed-files: "activerecord/**/*"
 activestorage:
-  - "activestorage/**/*"
+  - changed-files: "activestorage/**/*"
 activesupport:
-  - "activesupport/**/*"
+  - changed-files: "activesupport/**/*"
 rails-ujs:
-  - "actionview/app/assets/javascripts/rails-ujs*/*"
+  - changed-files: "actionview/app/assets/javascripts/rails-ujs/**/*"
 railties:
-  - "railties/**/*"
+  - changed-files: "railties/**/*"
 docs:
-  - "guides/**/*"
+  - changed-files: "guides/**/*"
