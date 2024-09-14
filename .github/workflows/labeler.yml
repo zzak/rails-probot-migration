@@ -5,7 +5,7 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  labeller:
+  labeler:
     if: github.repository_owner == 'zzak'
     permissions:
       contents: read
