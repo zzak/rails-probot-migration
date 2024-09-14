@@ -36,4 +36,4 @@ jobs:
 
             Thank you for all your contributions.
           close-issue-message: false
-          only-issue: true
+          only-issue-labels: true
