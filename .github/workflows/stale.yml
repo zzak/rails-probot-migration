@@ -1,5 +1,4 @@
 name: "rails-bot: Stale Issues"
-description: Mark issues as stale after a period of inactivity
 on:
   schedule:
     - cron: '0 0 * * *'

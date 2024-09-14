@@ -1,5 +1,4 @@
 name: "rails-bot: Label PRs"
-description: Label PRs based on file paths
 on:
   pull_request:
     types: [opened, synchronize]
