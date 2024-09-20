@@ -9,6 +9,9 @@ on:
 jobs:
   unstale:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
     steps:
     - name: Skip updates from bot
       if: github.actor == 'github-actions'
