@@ -22,8 +22,7 @@ jobs:
         script: |
           const labels = context.payload.issue.labels;
           const hasStaleLabel = labels.some(label => label.name === 'stale');
-          return hasStaleLabel;
-
+          core.setOutput('hasStaleLabel', hasStaleLabel);
 
     - name: Remove stale label if present
       if: steps.check_stale_label.outputs.hasStaleLabel == 'true'
