@@ -18,6 +18,7 @@ jobs:
           days-before-close: 2
           # days-before-stale: 90
           # days-before-close: 7
+          operations-per-run: 100
           exempt-milestones: true
           exempt-issue-labels: |
             - pinned
