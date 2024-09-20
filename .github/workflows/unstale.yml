@@ -2,7 +2,7 @@ name: "rails-bot: Unstale Issues"
 
 on:
   issues:
-    types: [edited, commented]
+    types: [edited, commented, labeled, unlabeled, assigned, unassigned, milestoned, demilestoned, reopened]
   issue_comment:
     types: [created]
 
