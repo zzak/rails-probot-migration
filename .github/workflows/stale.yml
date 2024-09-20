@@ -20,13 +20,7 @@ jobs:
           # days-before-close: 7
           operations-per-run: 100
           exempt-milestones: true
-          exempt-issue-labels: |
-            - pinned
-            - security
-            - With reproduction steps
-            - attached PR
-            - regression
-            - release blocker
+          exempt-issue-labels: 'pinned,security,With reproduction steps,attached PR,regression,release blocker'
           stale-issue-label: 'stale'
           stale-pr-label: 'stale'
           stale-issue-message: >
