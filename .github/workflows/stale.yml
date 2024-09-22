@@ -22,6 +22,7 @@ jobs:
           exempt-issue-labels: 'pinned,security,With reproduction steps,attached PR,regression,release blocker,more-information-needed'
           stale-issue-label: 'stale'
           stale-pr-label: 'stale'
+          exempt-all-milestones: true
           stale-issue-message: >
             This issue has been automatically marked as stale because it has not been commented on for at least three months.
 
